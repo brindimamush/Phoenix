@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import './App.css'; // This will contain your main CSS
 import { CardHolder } from './components/CardHolder';
 import { SpeedometerSection } from './components/SpeedometerSection';
