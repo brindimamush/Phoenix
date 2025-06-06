@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{box-sizing: border-box;}
+p{
+    font-family: Roboto,sans-serif;
+    color: white;
+    margin: none;
+}
+.cardHolder{
+    margin-top: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40vh;
+
+}
+.innerCircleRed{
+    height: 50px;
+    width: 50px;
+    background-color: #FD3D5C;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 15px ;
+    margin-left: 15px;
+}
+.circleHolderRed{
+    height: 90px;
+    width: 90px;
+    background-color: #E30732;
+    display: inline-block;
+    border-radius: 5PX;
+    border: #FD3D5C 5PX solid;
+    box-shadow: 0 5px 0 0 #E30732;
+}
+.innerCircleBlack{
+    height: 50px;
+    width: 50px;
+    background-color: #1E3D69;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 15px ;
+    margin-left: 15px;
+}
+.circleHolderBlack{
+    height: 90px;
+    width: 90px;
+    background-color: #0B2137;
+    display: inline-block;
+    border-radius: 5PX;
+    border: #1E3D69 5PX solid;
+    box-shadow: 0 5px 0 0 #0B2137;
+}
+.fireHolder{
+    height: 100px;
+    width: 100px;
+    margin-top: 15px;
+}
+.fire{
+    object-fit:cover;
+    height: 90px;
+    width: 90px;
+   box-shadow: 0 5px 0 0 #983501;
+   border-radius: 5PX;
+}
+.cardHolder{
+    /* From https://css.glass */
+background: rgba(#0B2137, 0.01);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0.4px);
+-webkit-backdrop-filter: blur(0.4px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+body{
+  background: #36509A;
+background: radial-gradient(circle, rgba(54, 80, 154, 1) 0%, rgba(22, 78, 177, 1) 100%);
+}
+/* start of the toggle css*/
+#cb-toggle:checked + .toggle {
+    background-color: hsl(102, 58%, 39%);
+}
+#cb-toggle:checked + .toggle::after {
+    transform: translateX(24px);
+}
+.hide-me {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.toggle {
+    position: relative;
+    display: inline-block;
+    margin-top: 0.5rem;
+    width: 50px;
+    height: 26px;
+    background-color: hsl(0, 0%, 85%);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in;
+}
+.toggle::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.25s ease-out;
+}
+/* end of the toggle */
+/*start of sppedometer */
+.speedoMeter{
+width:30px;
+height: 30px;
+margin-left: 3px;
+}
+.speedoMeterHolder{
+    height: 50px;
+    width:400px;
+    margin-top: 20vh;
+    margin-left : auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #0B2137;
+    border-radius: 22px;
+    text-align: center;
+}
+.toggleHolder{
+    margin-left: 90px;
+}
+.high{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.highRisk{
+    display: inline;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: small;
+}
+/*end of sppedometer */
+/*start of yellowbuttons */
+.yellowBtn{
+    width: 80px;
+    height: 60px;
+    background-color: #C88C34;
+    border-radius: 18px;
+    border: black 2px solid;
+    color: white;
+    box-shadow: 0 2px 1px 0 #0B2137;
+    object-fit: fill;
+}
+.yellowButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*end of yellowbutton */
+/*start of redbuttons */
+.redBtn{
+    width: 80px;
+    height: 60px;
+    background-color: #C9000E;
+    border-radius: 18px;
+    border: black 2px solid;
+    box-shadow: 0 2px 1px 0 #0B2137;
+    color: white;
+}
+.redButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*end of redbuttons */
+/*start of blackbuttons */
+.blackBtn{
+    width: 80px;
+    height: 60px;
+    background-color: black;
+    border-radius: 18px;
+    border: black 2px solid;
+    box-shadow: 0 2px 1px 0 #0B2137;
+    color: white;
+}
+.blackButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*end of blackbuttons */
+.btnHolder{
+    width: 250px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    row-gap: 15px;
+}
+/*Balance*/
+.balance{
+    display: inline-block;
+    width:120px;
+    height: 20px;
+    background-color: #0B2137;
+    color: white;
+    font-family: Roboto,sans-serif;
+    text-align: center;
+    border-radius: 8px;
+
+}
+/*end Balance*/
+.plusBtn{
+    background-color: #36509A;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: white;
+}
+.minusBtn{
+    background-color: #36509A;
+width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: white;
+}
+.coinBtn{
+    background-color: #36509A;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+
+}
+/*betUsd*/
+.betUsdHolder{
+
+display: flex;
+flex-direction: column;
+
+align-items: center;
+}
+.plusminusHolder{
+    margin-top: 10px;
+    font-size: small;
+}
+.betContainer{
+    width:350px;
+    font-size: small;
+    background-color: #36509A;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+}
